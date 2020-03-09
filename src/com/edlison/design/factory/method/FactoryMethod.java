@@ -1,10 +1,15 @@
-package com.edlison.design.factory;
+package com.edlison.design.factory.method;
 
+// 工厂方法模式
 public class FactoryMethod {
     public static void main(String[] args) {
-        Application application = new ConcreteProductB();
-        Product product = application.getObject();
-        product.method();
+        ConcreteProductA appA = new ConcreteProductA();
+        Product productA = appA.createProduct();
+        productA.method();
+
+        Application appB = new ConcreteProductB();
+        Product productB = appB.getObject();
+        productB.method();
     }
 }
 
