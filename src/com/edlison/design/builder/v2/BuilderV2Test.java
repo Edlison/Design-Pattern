@@ -17,13 +17,24 @@ class Product {
     private final String partC;
     private final String partD;
 
-    public Product(String productName, String companyName, String partA, String partB, String partC, String partD) {
+    // 私有构造方法1 ！！！
+    private Product(String productName, String companyName, String partA, String partB, String partC, String partD) {
         this.productName = productName;
         this.companyName = companyName;
         this.partA = partA;
         this.partB = partB;
         this.partC = partC;
         this.partD = partD;
+    }
+
+    // 私有构造方法2 ！！！
+    private Product(Builder builder) {
+        this.productName = builder.productName;
+        this.companyName = builder.companyName;
+        this.partA = builder.partA;
+        this.partB = builder.partB;
+        this.partC = builder.partC;
+        this.partD = builder.partD;
     }
 
     static class Builder {
@@ -65,7 +76,7 @@ class Product {
         }
 
         Product build() {
-            return new Product(this.productName, this.companyName, this.partA, this.partB, this.partC, this.partD);
+            return new Product(this);
         }
     }
 
