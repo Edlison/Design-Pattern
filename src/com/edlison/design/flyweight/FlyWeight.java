@@ -3,6 +3,7 @@ package com.edlison.design.flyweight;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+// 享元模式
 public class FlyWeight {
     public static void main(String[] args) {
         TreeNode treeNode1 = new TreeNode(3, 4, TreeFactory.getTree("x", "0000"));
