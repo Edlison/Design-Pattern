@@ -2,7 +2,7 @@
 
 ## Design Pattern
 
-- [Adapter]("~/tree/master/src/com/edlison/design/adapter")
+- [Adapter](src/com/edlison/design/adapter)
 - Builder
 - Chain Of Responsibility
 - Decorator
