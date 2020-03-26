@@ -1,6 +1,6 @@
 package com.edlison.design.adapter.v1;
 
-// Object Adapter
+// Object Adapter 对象适配器
 public class AdapterTestV1 {
     public static void main(String[] args) {
         Adaptee adaptee = new Adaptee();

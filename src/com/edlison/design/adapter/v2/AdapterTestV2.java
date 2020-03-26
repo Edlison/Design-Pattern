@@ -1,6 +1,6 @@
 package com.edlison.design.adapter.v2;
 
-// Class Adapter
+// Class Adapter 类适配器
 public class AdapterTestV2 {
     public static void main(String[] args) {
         Adapter adapter = new Adapter();
