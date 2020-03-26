@@ -2,10 +2,18 @@
 
 ## Design Pattern
 
-- Singleton
-- Factory
+- Adapter
 - Builder
+- Chain Of Responsibility
+- Decorator
+- Facade
+- Factory
+- Flyweight
+- Observer
 - Prototype
+- Singleton
+- Strategy
+- template
 
 > Link  
 > [Blog](http://edlison.com)
