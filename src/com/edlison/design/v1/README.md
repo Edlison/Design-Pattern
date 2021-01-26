@@ -1,1 +1,4 @@
-# 设计模式-Python实现
+# 设计模式-Java实例
+
+Reference
+https://refactoringguru.cn/
