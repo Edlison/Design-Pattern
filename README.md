@@ -16,7 +16,7 @@
 - [Strategy](src/com/edlison/design/v0/strategy)
 - [template](src/com/edlison/design/v0/template)
 
-## [Python](src/com/edlison/design/v1)
+## [Java实战](src/com/edlison/design/v1)
 
 
 
