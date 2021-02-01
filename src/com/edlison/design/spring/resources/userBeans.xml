@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.edlison.design.spring.ioc.dao.UserDAO">
+        <!--默认使用无参构造 使用set方法注入-->
+        <!--        <property name="username" value="this is username"/>-->
+        <!--有参构造-->
+        <constructor-arg name="username" value="This is username by constructor"/>
+
+        <property name="username" value="This is username"/>
+
+        <property name="address" ref="addressPlus"/>
+
+        <property name="books">
+            <array>
+                <value>Java</value>
+                <value>Python</value>
+                <value>Scala</value>
+            </array>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>SC2</value>
+                <value>LOL</value>
+                <value>CSGO</value>
+            </set>
+        </property>
+
+        <property name="hobbies">
+            <list>
+                <value>movies</value>
+                <value>tennis</value>
+            </list>
+        </property>
+
+        <property name="cards">
+            <map>
+                <entry key="idcard" value="320325"/>
+                <entry key="stucard" value="1801"/>
+            </map>
+        </property>
+
+        <property name="info">
+            <props>
+                <prop key="Title">CEO</prop>
+            </props>
+        </property>
+
+        <property name="wife">
+            <null>null_value</null>
+        </property>
+    </bean>
+
+</beans>

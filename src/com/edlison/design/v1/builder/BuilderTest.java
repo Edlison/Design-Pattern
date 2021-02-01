@@ -23,13 +23,13 @@ public class BuilderTest {
         director.constructSUV(carBuilder);
         Car car2 = carBuilder.getRes();
 
-        System.out.println("car1:" + car1);
-        System.out.println("car2:" + car2);
+        System.out.println("car1: " + car1);
+        System.out.println("car2: " + car2);
 
         CarManualBuilder carManualBuilder = new CarManualBuilder();
         director.constructSportsCar(carManualBuilder);
         Manual manual = carManualBuilder.getRes();
 
-        manual.print();
+        System.out.println("manual: " + manual.print());
     }
 }
