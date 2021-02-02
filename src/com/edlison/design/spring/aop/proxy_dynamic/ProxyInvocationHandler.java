@@ -11,6 +11,7 @@ import java.lang.reflect.Proxy;
  * @Date 2/2/21 10:53
  */
 public class ProxyInvocationHandler implements InvocationHandler {
+
     // 被代理的接口
     private Object target;
 
@@ -24,7 +25,7 @@ public class ProxyInvocationHandler implements InvocationHandler {
         return Proxy.newProxyInstance(this.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
     }
 
-    // 处理实例 返回结果
+    // 唤醒方法 返回结果
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         log(method.getName());
@@ -32,6 +33,7 @@ public class ProxyInvocationHandler implements InvocationHandler {
         return result;
     }
 
+    // 定义唤起方法执行前后进行装饰的方法
     private void log(String msg) {
         System.out.println("[Log] " + msg);
     }
