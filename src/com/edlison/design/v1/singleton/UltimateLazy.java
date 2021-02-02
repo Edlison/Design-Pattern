@@ -45,9 +45,9 @@ public class UltimateLazy {
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         UltimateLazy instanceA = UltimateLazy.getInstance();
-
         Constructor<UltimateLazy> declaredConstructor = UltimateLazy.class.getDeclaredConstructor();
         declaredConstructor.setAccessible(true);
         UltimateLazy instanceB = declaredConstructor.newInstance();
+        System.out.println(instanceA == instanceB);
     }
 }
